@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mystyles.css">
+    <title>Document</title>
+</head>
+<nav>
+<div class="navbar">
+    <a href="https://www.etsy.com/mx/market/pet_grooming_decal">INICIO</a>
+    <a href="#">NOSOTROS</a>
+</nav>
+
+<body>
+
+    <header class="container">
+        <h1> Bienvenidos al sistema de registro escolar</h1>
+        
+    </header>
+    <main class="container">
+        <h2> Registrar nuevo estudiante</h2>
+        <img class="logo" src="logo uabc.png" alt="logoUABC">
+        <div class="form">
+            <input type="text" placeholder="Ingresa el nombre del estudiante" id="txtNombre">
+            <input type="text" placeholder="Ingresa el correo del estudiante" id="txtCorreo">
+           
+            <select id="selSexo" class="form-select">
+                <option value="" disabled selected>-- Selecciona un sexo</option>
+                <option value="Hombre"> Hombre</option>
+                <option value="Mujer"> Mujer</option>
+            </select>
+
+            <select id="selCampus" class="form-select">
+                <option value="" disabled selected>-- Selecciona un Campus</option>
+                <option value="Mexicali"> Mexicali</option>
+                <option value="Tijuana"> Tijuana</option>
+                <option value="Ensenada"> Ensenada</option>
+                <option value="Tecate"> Tecate</option>
+            </select> 
+
+            <input type="text" placeholder="Ingreso de Calificacion del alumno" id="txtCalificacionA">
+            <input type="text" placeholder="Ingreso de Calificación del alumno" id="txtCalificacionB">
+            <input type="text" placeholder="Ingreso de Calificación del alumno" id="txtCalificacionC">  
+            
+            
+           <button  class="btn btn-dark" onclick="registrar();"> Registrar</button>
+     </div>
+
+    </main>
+    <section class="container"> 
+        <h2> Lista de estudiantes</h2>
+        <table class="table">
+            <thead>
+                <th> Nombre</th>
+                <th>Calf A</th>
+                <th>Calf B</th>
+                <th>Calf C</th>
+                <th> Promedio</th>
+            </thead>
+            <tbody id="alumnosTabla">
+
+            </tbody>
+
+        </table>
+    </section>
+    <script src="scripts/register.js"> </script>
+</body>
+</html>

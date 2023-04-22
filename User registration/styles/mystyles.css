@@ -1,0 +1,75 @@
+
+
+.navbar a {
+        display: block;
+        padding: 20px 20px;
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+.logo{
+    position: absolute;
+    width: 100px;
+    margin: 0 auto; 
+    top: 3%;
+    left: 50%;
+
+    }
+    .navbar a:hover {
+        background: #206d09;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         }
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+h2{
+    text-align: center;
+}
+.btn-dark{
+    background-color: rgb(71, 71, 69);
+    margin-top: 10px;
+    background: #206d09;
+    letter-spacing: 4px;
+    color: #f1cf0b;
+}
+
+.container{
+    background-color: rgb(214, 228, 128);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;   
+}
+
+.container input[type= "text"], .container .form-select{
+    display: block;
+    margin: 30px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto; 
+     }
+
+.table{
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+}
+.form{
+    text-align: center;
+}
+@media (max-width: 768px){ 
+.navbar{
+    display: none;
+}
+.logo{
+    top: 0;
+}
+}
